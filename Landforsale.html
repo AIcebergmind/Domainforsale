@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIceberg Mind</title>
+ <!--<link rel="stylesheet" href="style.css" /> -->
+  
+  <!-- Import Google Font: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+<!-- GEOLOCATION (approximate location of core team / HQ) -->
+<meta name="geo.region" content="FR" /> <!-- ISO region code -->
+<meta name="geo.placename" content="Paris" />
+<meta name="geo.position" content="48.8333;2.2477" />
+<meta name="ICBM" content="48.8333, 2.2477" /> <!-- Legacy compatibility -->
+
+<!-- HREFLANG for future multilingual versions -->
+<link rel="alternate" hreflang="en" href="https://www.aicebergmind.com/" />
+<link rel="alternate" hreflang="it" href="https://www.aicebergmind.com/it/" />
+<link rel="alternate" hreflang="de" href="https://www.aicebergmind.com/de/" />
+<link rel="alternate" hreflang="x-default" href="https://www.aicebergmind.com/" />
+
+<style>
+/* === ROOT VARIABLES === */
+:root {
+  --primary-color: #0D4D5E;
+  --secondary-color: #AAD0D1;
+  --text-color: #222;
+  --background-color: #f9f9f9;
+  --white: #ffffff;
+  --gray-light: #eeeeee;
+  --blue-dark: #08343f;
+  --font-sans: 'Be Vietnam Pro', 'Helvetica Neue', sans-serif;
+  --secondary-color-rgb: 170, 208, 209;
+--secondary-color-alpha: rgba(var(--secondary-color-rgb), 0.5); /* esempio con opacità */
+font-family: 'Be Vietnam Pro', 'Helvetica Neue', sans-serif;
+}
+
+
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* === HERO SECTION === */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--white) 60%, var(--secondary-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* serve per tagliare iceberg-top se esce */
+  z-index:100;
+}
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color:var(--blue-dark);
+}
+
+.hero-title {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+.hero-title span {
+    background: linear-gradient(to right, var(--secondary-color), var(--blue-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.hero .tagline {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: var(--blue-dark);
+  z-index: 20;
+}
+
+.hero h2 {
+  font-size: 1.6rem !important;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero h1,
+.hero h2,
+.hero .tagline {
+  margin: 0.5rem 0; /* margine verticale più stretto */
+}
+
+/* === FOOTER === */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white);
+  z-index:2000;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+a.email-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.email-link:hover {
+  color: var(--secondary-color); /* oppure un altro colore */
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AIceberg Mind",
+  "url": "https://www.aicebergmind.com",
+  "logo": "https://www.aicebergmind.com/images/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/aicebergmind",
+    "https://twitter.com/aicebergmind",
+    "https://youtube.com/@aicebergmind"
+  ],
+  "description": "Educational resources nourished by science, powered by AI.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressRegion": "France",
+    "addressCountry": "FR"
+  }
+}
+</script>
+
+</head>
+<body>
+
+  <!-- 1. HERO SECTION (parte visibile dell'iceberg) -->
+  <header class="hero">
+    <h1 class="hero-title">
+      <span>DOMAIN FOR</span> SALE
+    </h1>
+    <p>Interested? Contact us!</p>
+    <a href="mailto:contact@aicebergmind.com" class="email-link">
+      Email: contact@aicebergmind.com
+    </a>
+  </header>
+
+  <!-- 5. Footer -->
+  <footer>
+    <p>© 2025 AIceberg Mind</p>
+  </footer>
+
+</body>
+</html>
